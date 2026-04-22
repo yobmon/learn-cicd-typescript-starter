@@ -26,3 +26,5 @@ jobs:
         run: npm run test -- --coverage
       - name: Check code formatting
         run: npm run format:check
+      - name: check linting error
+        run: npm run lint  -- --max-warnings=0

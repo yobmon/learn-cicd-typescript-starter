@@ -12,6 +12,7 @@ export function middlewareAuth(
       const apiKey = getAPIKey(req.headers);
       if (!apiKey) {
         respondWithError(res, 401, "Couldn't find api key");
+        console.log("Unauthorized request: no API key provided");
         return;
       }
 
