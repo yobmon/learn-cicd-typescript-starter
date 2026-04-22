@@ -22,4 +22,5 @@ export const db = conn;
 export function assertDbConnection() {
   if (!db) {
     throw new Error("Database connection is not available");
-  }}
+  }
+}
